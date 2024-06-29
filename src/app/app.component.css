@@ -1,5 +1,5 @@
 /* Put these src/app/app.component.css */
-:host {
+/* :host {
     --content-padding: 10px;
   }
   header {
@@ -11,3 +11,4 @@
   .content {
     padding: var(--content-padding);
   }
+   */

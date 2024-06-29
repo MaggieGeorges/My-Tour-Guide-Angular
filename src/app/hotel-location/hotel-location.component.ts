@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HotelLocation } from '../hotel-location';
 import { RouterModule } from '@angular/router';
 @Component({
-  selector: 'app-housing-location',
+  selector: 'app-hotel-location',
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `

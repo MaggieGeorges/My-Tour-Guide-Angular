@@ -1,4 +1,4 @@
-/* Put these styles in: src/app/housing-location/housing-location.component.css */
+
 
 .listing {
   background: var(--accent-color);
@@ -26,6 +26,7 @@ section.listing a {
   padding-left: 20px;
   text-decoration: none;
   color: var(--primary-color);
+  margin-left: 200px;
 }
 section.listing a::after {
   content: "\203A";
@@ -34,6 +35,8 @@ section.listing a::after {
 
 .listing-starrating {
   color: gold;
+  margin-left: 20px;
+  
 }
 
 .listing-starrating .fa-star {

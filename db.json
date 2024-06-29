@@ -1,25 +1,25 @@
 {
  "hotels":[
     {  "id":0,
-        "name":"Acme Fresh Start Housing",
-       "location":"Mombasa",
-       "photo":"/assets/r-architecture-GGupkreKwxA-unsplash.jpg",
+        "name":"The Lake Nakuru Lodge",
+       "location":"Nakuru",
+       "photo":"./assets/lakenakurulodge.jpg",
        "starrating": 4,
        "wifi":true, 
        "laundry":true
    },
    {  "id":1,
-     "name":"Acme Fresh Start Housing",
-    "location":"Nairobi",
-    "photo":"./assets/phil-hearing-IYfp2Ixe9nM-unsplash.jpg",
+     "name":"The Amboseli Serena Safari Lodge",
+    "location":"Amboseli",
+    "photo":"./assets/Serena Safari Lodge - Amboseli, Kenya.jpg",
     "starrating": 4,
     "wifi":true,
     "laundry":true
    },
    {  "id":2,
-     "name":"Acme Fresh Start Housing",
-    "location":"Nakuru",
-    "photo":"/assets/example-house.jpg",
+     "name":"The Diani Beach Resort",
+    "location":"Diani",
+    "photo":"./assets/Great Little Places_ Photo.jpg",
     "starrating": 4,
     "wifi":true,
     "laundry":true
@@ -27,74 +27,79 @@
    {  "id":3,
      "name":"Acme Fresh Start Housing",
     "location":"Kisumu",
-    "photo":"/assets/ian-macdonald-W8z6aiwfi1E-unsplash.jpg",
+    "photo":"/assets/Norfolk.jpg",
     "starrating": 4,
     "wifi":true,
     "laundry":true
    },
    {  "id":4,
-     "name":"Acme Fresh Start Housing",
-    "location":"Eldoret",
-    "photo":"/assets/ian-macdonald-W8z6aiwfi1E-unsplash.jpg",
+     "name":"Safari Park Hotel",
+    "location":"Nairobi",
+    "photo":"/assets/Safari Park Safari Park Hotel.jpg",
     "starrating": 4,
     "wifi":true,
     "laundry":true
    },
    {  "id":5,
-     "name":"Acme Fresh Start Housing",
-    "location":"Nyahururu",
-    "photo":"/assets/ian-macdonald-W8z6aiwfi1E-unsplash.jpg",
+     "name":"The Samburu Intrepids",
+    "location":"Samburu",
+    "photo":"/assets/samburu.jpg",
     "starrating": 4,
     "wifi":true,
     "laundry":true
+   }
+  
+
+    ],
+
+"tours":[
+    {  "id":0,
+        "name":"Safari Adventure in Maasai Mara",
+       "destination":"Mombasa",
+       "description": "Experience the thrill of a safari in one of Africa's most famous national reserves. Witness the Big Five and marvel at the stunning landscapes.",
+       "photo":"/assets/maasai-mara1.jpg",
+       "price": 500
+       
    },
-   {  "id":6,
-     "name":"Acme Fresh Start Housing",
-    "location":"Olkalou",
-    "photo":"/assets/ian-macdonald-W8z6aiwfi1E-unsplash.jpg",
-    "starrating": 4,
-    "wifi":true,
-    "laundry":true
+   {  "id":1,
+     "name":"Serengeti National Park",
+    "destination":"Nairobi",
+    "description": "Renowned for its vast savannahs, teeming with wildlife during the annual Great Migration of wildebeest and zebra, offering unparalleled opportunities for safari experiences and wildlife photography.",
+    "photo":"./assets/serengeti.jpg",
+    "price": 4000
+    
    },
-   {  "id":7,
-     "name":"Acme Fresh Start Housing",
-    "location":"Nyeri",
-    "photo":"/assets/ian-macdonald-W8z6aiwfi1E-unsplash.jpg",
-    "starrating": 4,
-    "wifi":true,
-    "laundry":true
+   {  "id":2,
+     "name":"Tsavo National Parks",
+    "destination":"Nakuru",
+    "description": "Tsavo National Parks comprise Tsavo East and Tsavo West, collectively the largest national park in Kenya, famous for its vast wilderness, diverse wildlife, and iconic red elephants.",
+    "photo":"/assets/tsavo.jpg",
+    "price": 4
+    
    },
-   {  "id":8,
-     "name":"Acme Fresh Start Housing",
-    "location":"Meru",
-    "photo":"/assets/ian-macdonald-W8z6aiwfi1E-unsplash.jpg",
-    "starrating": 4,
-    "wifi":true,
-    "laundry":true
+   {  "id":3,
+     "name": "Kilimanjaro National Park",
+    "destination":"Kisumu",
+    "description": "It offers diverse ecosystems ranging from lush rainforests to alpine deserts, attracting adventurers and nature enthusiasts alike",
+    "photo":"/assets/kilimanjaro.jpg",
+    "price": 4
+    
    },
-   {  "id":9,
-     "name":"Acme Fresh Start Housing",
-    "location":"Nanyuki",
-    "photo":"/assets/r-architecture-GGupkreKwxA-unsplash.jpg",
-    "starrating": 4,
-    "wifi":true, 
-    "laundry":true
- },
- {  "id":10,
-   "name":"Acme Fresh Start Housing",
-  "location":"Namanga",
-  "photo":"/assets/r-architecture-GGupkreKwxA-unsplash.jpg",
-  "starrating": 4,
-  "wifi":true, 
-  "laundry":true
- },
- {  "id":11,
-   "name":"Acme Fresh Start Housing",
-  "location":"Embu",
-  "photo":"/assets/r-architecture-GGupkreKwxA-unsplash.jpg",
-  "starrating": 4,
-  "wifi":true, 
-  "laundry":true
- }
+   {  "id":4,
+     "name":"Mount Kenya Hiking Expedition",
+    "location":"Mount Kenya, Kenya",
+    "description": "Embark on a challenging yet rewarding trek to the summit of Mount Kenya, Africa's second-highest mountain.",
+    "photo":"/assets/mount-kenya1.jpg",
+    "price": 4
+   },
+   {  "id":5,
+        "name":"Cultural Tour of Nairobi",
+       "destination":"Mombasa",
+       "description": "Explore the vibrant culture and history of Nairobi, including visits to museums, markets, and local communities.",
+       "photo":"/assets/nairobi.jpg",
+       "price": 250
+       
+   }
     ]
+    
 }

@@ -1,0 +1,37 @@
+<header>
+  <nav>
+      <div class="logo">
+          <a href="#"><img src="src/assets/download.png" alt="Your Tours Guide Logo"></a>
+      </div>
+      <ul class="nav-links">
+          <li><a routerLink="/" routerLinkActive="active" 
+            [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+          <li><a routerLink="/bookings">Bookings</a></li>
+          <li><a routerLink="/contact">Contact</a></li>
+          <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+      </ul>
+  </nav>
+</header>
+
+
+<section>
+    <h1>Hotels</h1>
+    <form>
+    <input type="text" placeholder="Filter by hotel location" #hotelFilter>
+    <button class="primary" type="button" (click)="filterResults(hotelFilter.value)">Search Hotels</button>
+    </form>
+    </section>
+    <section class="results">
+      <app-hotel-location *ngFor="let hotelLocation of filteredLocationList" [hotelLocation]="hotelLocation"></app-hotel-location>
+    </section>
+
+  <section>
+    <h1>Tours</h1>
+    <form>
+      <input type="text" placeholder="Filter by tours destination" #toursFilter>
+      <button class="primary" type="button" (click)="filterResults(toursFilter.value)">Search Tours</button>
+    </form>
+  </section>
+  <section class="results">
+    <app-tours-location *ngFor="let toursLocation of filteredLocation" [toursLocation]="toursLocation"></app-tours-location>
+  </section>

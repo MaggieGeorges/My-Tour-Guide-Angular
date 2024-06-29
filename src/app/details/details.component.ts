@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { HotelLocation} from '../hotel-location';
 import { hotelsService } from '../hotel.service';
+import { ToursLocation } from '../tours-location';
+import { toursService } from '../tours.service';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
@@ -46,14 +48,15 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent {
-  route: ActivatedRoute = inject(ActivatedRoute); // retrieve an instance of service ActivateRoute
-  HotelsService = inject(hotelsService); // retrieve an instance of service HousingService
+  route: ActivatedRoute = inject(ActivatedRoute);
+  HotelsService = inject(hotelsService); 
   HotelLocation:  HotelLocation | undefined;
   applyForm = new FormGroup({
     firstName: new FormControl(''),
     lastName: new FormControl(''),
     email: new FormControl('')
   });
+
 
   constructor() {
     const hotelLocationId = Number(this.route.snapshot.params['id']);
