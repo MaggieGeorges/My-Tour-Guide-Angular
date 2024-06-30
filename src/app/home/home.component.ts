@@ -1,19 +1,19 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HotelLocationComponent } from '../hotel-location/hotel-location.component';
-import { ToursLocationComponent } from '../tours-location/tours-location.component';
+import { HotelLocationComponent } from '../Components/hotels/hotel-location.component';
+import { ToursLocationComponent } from '../Components/tours/tours-location.component';
 import { HotelLocation } from '../hotel-location';
 import { ToursLocation } from '../tours-location';
-import { toursService } from '../tours.service';
-import { hotelsService } from '../hotel.service';
+import { toursService } from '../Services/tours.service';
+import { hotelsService } from '../Services/hotel.service';
 import { RouterModule } from '@angular/router';
-import { HeaderComponent } from '../header/header.component';
+//import { HeaderComponent } from '../header/header.component';
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterModule, HeaderComponent, CommonModule, HotelLocationComponent,  ToursLocationComponent],
+  imports: [RouterModule,  CommonModule, HotelLocationComponent,  ToursLocationComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

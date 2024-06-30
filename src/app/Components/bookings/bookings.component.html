@@ -1,0 +1,16 @@
+<!-- bookings.component.html -->
+<form [formGroup]="bookingForm" (ngSubmit)="submitBooking()">
+  <label for="userId">User ID</label>
+  <input id="userId" formControlName="userId" type="text">
+
+  <label for="toursId">Tours ID</label>
+  <input id="toursId" formControlName="toursId" type="text">
+
+  <label for="hotelsId">Hotels ID</label>
+  <input id="hotelsId" formControlName="hotelsId" type="text" readonly>
+
+  <label for="bookingDate">Booking Date</label>
+  <input id="bookingDate" formControlName="bookingDate" type="date">
+
+  <button type="submit">Submit Booking</button>
+</form>

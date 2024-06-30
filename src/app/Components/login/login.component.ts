@@ -1,9 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, Validators } from '@angular/forms';
-import { AuthenticationService } from '../authentication.service';
+import { AuthenticationService } from '../../Services/authentication.service';
 import { Subscription } from 'rxjs';
 import { ReactiveFormsModule } from '@angular/forms';
-import { LoginResponse } from '../Models';
+import { LoginResponse } from '../../Models/users.models';
 import { CommonModule } from '@angular/common';
 
 @Component({

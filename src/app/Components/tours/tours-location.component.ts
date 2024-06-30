@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ToursLocation } from '../tours-location';
+import { ToursLocation } from '../../tours-location';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
@@ -15,7 +15,7 @@ import { RouterModule } from '@angular/router';
       <p class="listing-location">{{ toursLocation.destination }}</p>
       <p class="listing-description">{{toursLocation.description}}</p>
       <p class="listing-price">{{ toursLocation.price }}</p>
-      <a [routerLink]="['/details', toursLocation.id]">Book now</a>
+      <a [routerLink]="['bookings', toursLocation.id]">Book now</a>
     </section>
   `,
 })

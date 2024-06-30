@@ -2,9 +2,10 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { HotelLocation} from '../hotel-location';
-import { hotelsService } from '../hotel.service';
+import { hotelsService } from '../Services/hotel.service';
 import { ToursLocation } from '../tours-location';
-import { toursService } from '../tours.service';
+import { toursService } from '../Services/tours.service';
+import { Router } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({

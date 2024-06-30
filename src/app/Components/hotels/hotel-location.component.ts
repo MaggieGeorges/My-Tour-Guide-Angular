@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HotelLocation } from '../hotel-location';
+import { HotelLocation } from 'src/app/hotel-location';
 import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-hotel-location',
@@ -15,7 +15,7 @@ import { RouterModule } from '@angular/router';
             <i *ngFor="let star of getStars(hotelLocation.starrating)" class="fas fa-star"></i>
             <i *ngFor="let star of getEmptyStars(hotelLocation.starrating)" class="far fa-star"></i>
           </p>
-          <a [routerLink]="['/details', hotelLocation.id]">Book now</a>
+          <a [routerLink]="['/bookings', hotelLocation.id]">Book now</a>
       </section>
   `,
   styleUrls: ['./hotel-location.component.css']

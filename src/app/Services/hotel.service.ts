@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HotelLocation  } from './hotel-location';
+import { HotelLocation } from '../hotel-location';
 
 @Injectable({
   providedIn: 'root' 

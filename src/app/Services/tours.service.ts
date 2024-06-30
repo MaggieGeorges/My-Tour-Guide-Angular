@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ToursLocation  } from './tours-location';
+import { ToursLocation } from '../tours-location';
 
 @Injectable({
   providedIn: 'root' 
