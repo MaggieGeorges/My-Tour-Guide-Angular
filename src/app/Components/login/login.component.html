@@ -1,18 +1,25 @@
+<div class="login-container">
+  <div class="login">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <label for="email">Email:</label>
+      <input id="email" formControlName="email" type="email">
+      <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+        <small *ngIf="loginForm.get('email')?.errors?.['required']">Email is required.</small>
+        <small *ngIf="loginForm.get('email')?.errors?.['email']">Invalid email address.</small>
+      </div>
 
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-  <label for="email">Email:</label>
-  <input id="email" formControlName="email" type="email">
-  <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
-    <small *ngIf="loginForm.get('email')?.errors?.['required']">Email is required.</small>
-    <small *ngIf="loginForm.get('email')?.errors?.['email']">Invalid email address.</small>
+      <label for="password">Password:</label>
+      <input id="password" formControlName="password" type="password">
+      <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+        <small *ngIf="loginForm.get('password')?.errors?.['required']">Password is required.</small>
+      </div>
+
+      <button type="submit" [disabled]="loginForm.invalid">Login</button>
+
+      <p class="new-account-link">
+        New here? <a routerLink="/register">Create an account</a>
+      </p>
+      
+    </form>
   </div>
-
-  <label for="password">Password:</label>
-  <input id="password" formControlName="password" type="password">
-  <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
-    <small *ngIf="loginForm.get('password')?.errors?.['required']">Password is required.</small>
-  </div>
-
-  <button type="submit" [disabled]="loginForm.invalid">Login</button>
-  
-</form>
+</div>

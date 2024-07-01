@@ -7,7 +7,7 @@ import { ToursLocation } from '../tours-location';
 import { toursService } from '../Services/tours.service';
 import { hotelsService } from '../Services/hotel.service';
 import { RouterModule } from '@angular/router';
-//import { HeaderComponent } from '../header/header.component';
+
 
 
 @Component({

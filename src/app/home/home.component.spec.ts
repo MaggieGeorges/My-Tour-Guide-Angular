@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HotelLocation } from '../hotel-location';
 import { HomeComponent } from './home.component';
 
 describe('HomeComponent', () => {

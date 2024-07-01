@@ -1,15 +1,16 @@
-// bookings.component.ts
+
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { BookingService } from '../../Services/booking.service';
 import { Booking } from '../../Models/booking.model';
 import { ActivatedRoute } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-bookings',
   templateUrl: './bookings.component.html',
   standalone: true,
-  imports: [ FormsModule, ReactiveFormsModule],
+  imports: [ FormsModule, ReactiveFormsModule, HttpClientModule],
   styleUrls: ['./bookings.component.css'],
   providers: [BookingService]
 })

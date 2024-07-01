@@ -1,17 +1,3 @@
-<header>
-  <nav>
-      <div class="logo">
-          <a href="#"><img src="assets/download.png" alt="Your Tours Guide Logo"></a>
-      </div>
-      <ul class="nav-links">
-          <li><a routerLink="/" routerLinkActive="active" 
-            [routerLinkActiveOptions]="{exact:true}">Home</a></li>
-          <li><a routerLink="/bookings">Bookings</a></li>
-          <li><a routerLink="/contact">Contact</a></li>
-          <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
-      </ul>
-  </nav>
-</header>
 
 
 <section>
@@ -35,3 +21,5 @@
   <section class="results">
     <app-tours-location *ngFor="let toursLocation of filteredLocation" [toursLocation]="toursLocation"></app-tours-location>
   </section>
+
+ 
